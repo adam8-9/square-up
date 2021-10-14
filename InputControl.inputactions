@@ -1,0 +1,91 @@
+{
+    "name": "InputControl",
+    "maps": [
+        {
+            "name": "player1",
+            "id": "e568e276-72fd-4d37-b23e-87ec0ee215ba",
+            "actions": [
+                {
+                    "name": "horizontal",
+                    "type": "Button",
+                    "id": "d50bca17-9b3b-4027-9056-e4df4ab62dd2",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "WASDKeys",
+                    "type": "Button",
+                    "id": "96e37d9e-c924-4392-88ea-05c1d7895fc3",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "1D Axis",
+                    "id": "1f53fd5c-7b7c-4d05-82ef-fcba302f2bf8",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "WASDKeys",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "aca4302b-d626-4d73-ac12-d77ce9d59ae8",
+                    "path": "<Keyboard>/#(A)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "keyboard",
+                    "action": "WASDKeys",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "26266eee-fdd2-4db4-9c59-101593141daa",
+                    "path": "<Keyboard>/#(D)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "keyboard",
+                    "action": "WASDKeys",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "327fa35e-65f9-45d3-82af-b7cf6494512f",
+                    "path": "<Keyboard>/#(W)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "keyboard",
+                    "action": "horizontal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "keyboard",
+            "bindingGroup": "keyboard",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
